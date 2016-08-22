@@ -14,32 +14,28 @@
 <body>
 
 	<header class="header">
-		<h1 class="header__title">
-			stVideo
-			<small>HTML5 video canvas player</small>
-		</h1>
+		<div class="header__align">
+			<a class="header__logo" href="http://stabla.com"><img src="assets/img/logo-stabla@2x.png" alt="stabla.com"></a>
 
-		<a class="header__logo" href="http://stabla.com"><img src="http://stabla.com/assets/img/stabla-logo-small@2x.png" alt="stabla.com"></a>
+			<a class="header__github" href="https://github.com/tstabla">Follow @tstabla</a>
+		</div>
 	</header>
+
+	<h1 class="title">
+		stVideo
+		<small>HTML5 video canvas player</small>
+	</h1>
 
 	<section class="entry">
 		<div id="player" data-stvideo="{'mp4': 'assets/video/car.mp4', 'webm': 'assets/video/car.webm', 'width': 524, 'height': 270}"></div>
 	</section>
 
-	<footer class="footer">
-		<a class="github-button" href="https://github.com/tstabla" data-style="mega" aria-label="Follow @tstabla on GitHub">Follow @tstabla</a>
-	</footer>
 
 	<script src="dist/js/stvideo.js"></script>
+
 	<script>
 		var video = new stVideo('#player');
-
-		video.on('canplaythrough', function() {
-			// video.play();
-		});
-
 	</script>
 
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
